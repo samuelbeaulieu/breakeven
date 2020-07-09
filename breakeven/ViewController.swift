@@ -76,6 +76,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.buyCommission.text = "$0.00"
         self.sellCommission.text = "$0.00"
         self.profit.text = "$0.00"
+        self.profitImage.image = UIImage(systemName:"arrow.up.arrow.down")
+        self.profitImage.tintColor = UIColor.label
         
         DispatchQueue.main.async {
             self.nbShare.becomeFirstResponder()
