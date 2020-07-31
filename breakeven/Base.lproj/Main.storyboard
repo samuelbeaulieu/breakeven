@@ -32,32 +32,32 @@
                                 <rect key="frame" x="20" y="154.5" width="374" height="128"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgH-rz-JSu">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Commission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bip-7f-wkC">
-                                                <rect key="frame" x="140.5" y="20" width="93.5" height="20.5"/>
+                                                <rect key="frame" x="47" y="20" width="93.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbx-td-G6U">
-                                                <rect key="frame" x="174.5" y="48.5" width="59.5" height="26.5"/>
+                                                <rect key="frame" x="81" y="48.5" width="59.5" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofy-ba-Jbj">
-                                                <rect key="frame" x="174.5" y="80" width="59.5" height="26.5"/>
+                                                <rect key="frame" x="81" y="80" width="59.5" height="26.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ilm-7A-AKz">
-                                                <rect key="frame" x="140.5" y="40.5" width="24" height="43"/>
+                                                <rect key="frame" x="47" y="40.5" width="24" height="43"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart.badge.minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="R4s-mG-deP">
-                                                <rect key="frame" x="140.5" y="72" width="24" height="43"/>
+                                                <rect key="frame" x="47" y="72" width="24" height="43"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                             </imageView>
                                         </subviews>
@@ -76,8 +76,53 @@
                                             <constraint firstItem="R4s-mG-deP" firstAttribute="height" secondItem="ofy-ba-Jbj" secondAttribute="height" multiplier="1.62264" id="uSE-ba-Hkb"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-IN-tt3">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Market Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIY-g1-3rS">
+                                                <rect key="frame" x="44" y="20" width="99" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPB-Qu-49N">
+                                                <rect key="frame" x="78" y="48.5" width="59.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFP-5Z-323">
+                                                <rect key="frame" x="78" y="80" width="59.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kjd-NA-PkS">
+                                                <rect key="frame" x="44" y="40.5" width="24" height="43"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                            </imageView>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart.badge.minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gQO-JE-DLN">
+                                                <rect key="frame" x="44" y="72" width="24" height="43"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gQO-JE-DLN" firstAttribute="leading" secondItem="VIY-g1-3rS" secondAttribute="leading" id="0W2-ML-4hw"/>
+                                            <constraint firstItem="Kjd-NA-PkS" firstAttribute="leading" secondItem="VIY-g1-3rS" secondAttribute="leading" id="3UM-8e-AqO"/>
+                                            <constraint firstItem="Kjd-NA-PkS" firstAttribute="centerY" secondItem="oPB-Qu-49N" secondAttribute="centerY" id="43y-CP-xXC"/>
+                                            <constraint firstItem="IFP-5Z-323" firstAttribute="leading" secondItem="gQO-JE-DLN" secondAttribute="trailing" constant="10" id="4ga-oa-RE5"/>
+                                            <constraint firstItem="oPB-Qu-49N" firstAttribute="leading" secondItem="Kjd-NA-PkS" secondAttribute="trailing" constant="10" id="6e6-Vt-hfa"/>
+                                            <constraint firstItem="VIY-g1-3rS" firstAttribute="centerX" secondItem="HRa-IN-tt3" secondAttribute="centerX" id="N5i-ze-uIH"/>
+                                            <constraint firstItem="oPB-Qu-49N" firstAttribute="top" secondItem="VIY-g1-3rS" secondAttribute="bottom" constant="8" symbolic="YES" id="VLi-NB-kGD"/>
+                                            <constraint firstItem="gQO-JE-DLN" firstAttribute="centerY" secondItem="IFP-5Z-323" secondAttribute="centerY" id="Zqi-oJ-CKh"/>
+                                            <constraint firstItem="gQO-JE-DLN" firstAttribute="height" secondItem="IFP-5Z-323" secondAttribute="height" multiplier="1.62264" id="dR9-sq-uAZ"/>
+                                            <constraint firstItem="IFP-5Z-323" firstAttribute="top" secondItem="oPB-Qu-49N" secondAttribute="bottom" constant="5" id="e0P-8V-KmF"/>
+                                            <constraint firstItem="VIY-g1-3rS" firstAttribute="top" secondItem="HRa-IN-tt3" secondAttribute="top" constant="20" symbolic="YES" id="oEJ-01-w6l"/>
+                                            <constraint firstItem="Kjd-NA-PkS" firstAttribute="height" secondItem="oPB-Qu-49N" secondAttribute="height" multiplier="1.62264" id="uPt-3Z-Ohu"/>
+                                        </constraints>
+                                    </view>
                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHa-f4-7z0">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="128"/>
+                                        <rect key="frame" x="374" y="0.0" width="0.0" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profit / Loss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FO-NJ-Nd3">
                                                 <rect key="frame" x="-45" y="20" width="90" height="20.5"/>
@@ -86,13 +131,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INc-Ch-4X2">
-                                                <rect key="frame" x="-14.5" y="49" width="59.5" height="26.5"/>
+                                                <rect key="frame" x="-14.5" y="65" width="59.5" height="79"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3O9-Qu-z8r">
-                                                <rect key="frame" x="-48.5" y="41.5" width="24" height="41"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sell" translatesAutoresizingMaskIntoConstraints="NO" id="3O9-Qu-z8r">
+                                                <rect key="frame" x="-152.5" y="40.5" width="128" height="128"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                             </imageView>
                                         </subviews>
@@ -203,6 +248,9 @@
                     <connections>
                         <outlet property="breakEven" destination="WeV-9z-3x3" id="eD9-x7-ooM"/>
                         <outlet property="buyCommission" destination="xbx-td-G6U" id="MTK-bG-EQl"/>
+                        <outlet property="marketValueBuy" destination="oPB-Qu-49N" id="6fZ-X4-VXE"/>
+                        <outlet property="marketValueSell" destination="IFP-5Z-323" id="mym-Tz-gjf"/>
+                        <outlet property="marketValueSellIcon" destination="gQO-JE-DLN" id="fT9-0i-gRq"/>
                         <outlet property="nbShare" destination="uiu-r0-L5T" id="2mO-5a-9b5"/>
                         <outlet property="price" destination="X53-Nc-PTY" id="c2F-Kp-t8z"/>
                         <outlet property="profit" destination="INc-Ch-4X2" id="aZ6-AN-2p1"/>
@@ -221,9 +269,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.up.arrow.down" catalog="system" width="128" height="96"/>
         <image name="cart.badge.minus" catalog="system" width="128" height="106"/>
         <image name="cart.badge.plus" catalog="system" width="128" height="106"/>
+        <image name="sell" width="128" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

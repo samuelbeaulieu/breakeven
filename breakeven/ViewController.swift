@@ -22,6 +22,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var profit: UILabel!
     @IBOutlet weak var profitLabel: UILabel!
     @IBOutlet weak var profitView: UIView!
+    @IBOutlet weak var marketValueBuy: UILabel!
+    @IBOutlet weak var marketValueSell: UILabel!
+    @IBOutlet weak var marketValueSellIcon: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +52,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 self.profitView.isHidden = true
                 self.sellPriceLabel.isHidden = true
                 self.sellPrice.isHidden = true
+                self.marketValueSellIcon.isHidden = true
+                self.marketValueSell.isHidden = true
                 DispatchQueue.main.async {
                     self.price.becomeFirstResponder()
                 }
@@ -59,6 +64,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 self.profitView.isHidden = false
                 self.sellPriceLabel.isHidden = false
                 self.sellPrice.isHidden = false
+                self.marketValueSellIcon.isHidden = false
+                self.marketValueSell.isHidden = false
+                self.marketValueSell.text = "$0.00"
                 self.sellPrice.text = ""
                 DispatchQueue.main.async {
                     self.sellPrice.becomeFirstResponder()
@@ -75,6 +83,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.breakEven.text = "$0.00"
         self.buyCommission.text = "$0.00"
         self.sellCommission.text = "$0.00"
+        self.marketValueBuy.text = "$0.00"
+        self.marketValueSell.text = "$0.00"
         self.profit.text = "$0.00"
         self.profitImage.image = UIImage(systemName:"arrow.up.arrow.down")
         self.profitImage.tintColor = UIColor.label
@@ -120,6 +130,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             buyCommission = 9.95
             sellCommission = 9.95
         }
+        
+        self.marketValueBuy.text = "$" + String(Double(round(100*(nbShare * price))/100))
+        self.marketValueSell.text = "$" + String(Double(round(100*(nbShare * sellPrice))/100))
+        
+        self.buyCommission.text = "$" + String(buyCommission)
         
         self.buyCommission.text = "$" + String(buyCommission)
         self.sellCommission.text = "$" + String(sellCommission)
