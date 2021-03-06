@@ -1,4 +1,4 @@
-import { SET_SHARES, SET_SHAREPRICE, SET_NUMBERLOT, SET_SELLINGPRICE, SET_ISSELLING, SET_BUY_COMMISSION, SET_SELL_COMMISSION } from "../actions/meals";
+import { SET_SHARES, SET_SHAREPRICE, SET_NUMBERLOT, SET_SELLINGPRICE, SET_ISSELLING, SET_BUY_COMMISSION, SET_SELL_COMMISSION } from "../actions/shares"
 
 const initialState = {
     shares: '',
@@ -33,8 +33,8 @@ const transactionReducer = (state = initialState, action) => {
         case SET_SELL_COMMISSION:
             state.sellCommission = action.price
             break
-
         default:
+            break
     }
     return state
 }

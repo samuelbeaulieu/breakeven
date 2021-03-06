@@ -1,14 +1,30 @@
-export const colors = {
-  accent: '#007aff', // Accent color
-  label: '#000000', // Label color
-  secondaryLabel: '#8e8e93', // Secondary label color
-  background: '#f2f2f7', // Background color
-  backgroundDarkened: 'rgba(209, 209, 214, 0.5)', // Darkened background color
-  border: '#d1d1d6', // Border color
-  white: '#ffffff', // Light color
-  error: '#e90000', // Error color
-  warning: '#e97500', // Warning color
-  success: '#05b841', // Success color
+export const Theme = {
+  default: {
+    dark: false,
+    colors: {
+      accent: '#007aff', // Accent
+      text: '#000000', // Text
+      placeholder: 'rgba(0, 0, 0, 0.5)', // Placeholder
+      background: '#ffffff', // Background
+      accessory: '#fafafa', // Accessory
+      border: '#d1d1d6', // Border
+      negative: '#ff3b30', // Negative
+      positive: '#05b841', // Positive
+    }
+  },
+  dark: {
+    dark: true,
+    colors: {
+      accent: '#0a84ff', // Accent
+      text: '#ffffff', // Text
+      placeholder: 'rgba(255, 255, 255, 0.5)', /// Placeholder
+      background: '#000000', // Background
+      accessory: '#1c1c1e', // Accessory
+      border: '#3a3a3c', // Border
+      negative: '#ff453a', // Negative
+      positive: '#30d158', // Positive
+    }
+  }
 }
 
 export const spacing = {
