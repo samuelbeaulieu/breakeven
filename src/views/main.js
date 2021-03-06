@@ -253,7 +253,6 @@ export function MainScreen() {
                 }
               } else {
                 if((shares != '' || shares != 0) && (sharePrice != '' || sharePrice != 0)) {
-                  console.log('xxx') // eslint-disable-line no-console
                   getShareInformation()
                 }
               }
